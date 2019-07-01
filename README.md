@@ -20,15 +20,15 @@ Once that's all set, you can start editing articles.  Main.md is always the land
 Directory Structure
 ===================
 
-./ <-- Doc root
-./wiki.php <-- main code
-./media <-- Images and such.  Files here do get get hit by the rewrite rule
-./articles <-- All of your site's content
-./includes <-- Support files that make up the layout
-          /header.md <-- site header
-          /footer.md <-- site footer
-          /sidebar.mb <-- site sidebar
-./config.php <-- Site configuration file
+  ./ <-- Doc root
+  ./wiki.php <-- main code
+  ./media <-- Images and such.  Files here do get get hit by the rewrite rule
+  ./articles <-- All of your site's content
+  ./includes <-- Support files that make up the layout
+    header.md <-- site header
+    footer.md <-- site footer
+    sidebar.mb <-- site sidebar
+  ./config.php <-- Site configuration file
 
 Support
 =======
