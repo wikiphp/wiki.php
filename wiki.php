@@ -16,10 +16,13 @@ print "<!DOCTYPE html>
 	</head>
 	<body>
 <!-- Begin Header -->
-";
+
+	<div id='header'>";
 
 echo ( shell_exec("/usr/bin/pandoc $doc_root/includes/header.md") );
-print "<!-- End Header -->
+print "
+		</div>
+<!-- End Header -->
 ";
 
 print "<hr>

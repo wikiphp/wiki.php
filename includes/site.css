@@ -1,27 +1,30 @@
-#body {
-	width:90%;
+body {
+	font-family: Sans-serif;
 }
 
-
 #body {
-	width:78%;
+	width: 90%;
 }
 
 #header {
-	width:90%;
+	width: 90%;
 	text-align: center;
+	font-size: xx-large;
 }
 #content {
-	width:78%;
-	float:right;
+	width: 78%;
+	float: left;
+	font-size: medium;
 }
 
 #sidebar {
-	width:18%;
-	float: left;
+	width: 18%;
+	float: right;
+	font-size: small;
 }
 #footer {
 	width: 90%;
 	text-align: center;
 	clear: both;
+	font-size: smaller;
 }
