@@ -23,10 +23,10 @@ print "<!-- End Header -->
 ";
 
 print "<hr>
-	<div id='body' style='width: 90%;'>
+	<div id='body'>
 
 <!-- Begin Sidebar  -->
-		<div id='sidebar' style='width: 20%;float:left;'>
+		<div id='sidebar'>
 ";
 echo ( shell_exec("/usr/bin/pandoc $doc_root/includes/sidebar.md") );
 
@@ -34,7 +34,7 @@ print "		</div>
 <!-- End Sidebar -->
 
 <!-- Begin Body -->
-		<div id='content' style='width: 80%; float:right;'>";
+		<div id='content'>";
 
 echo ( shell_exec("/usr/bin/pandoc $doc_root/articles/$page.md") );
 
@@ -44,7 +44,7 @@ print "		</div>
 	</div>
 
 <!-- Begin Footer -->
-	<div id='footer' style='clear:both;'>
+	<div id='footer'>
 	<hr>
 ";
 
