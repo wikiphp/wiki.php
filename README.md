@@ -14,7 +14,7 @@ Installation is really only a couple of steps:
 
 * Clone down the repo
 * Edit config.php.  The values are pretty self-explantory, but there's also comments explaining
-* Edit includes/header.md, includes/footer.php, and includes/sidebar.md
+* Edit includes/header.md, includes/footer.md, and includes/sidebar.md
 
 
 Once that's all set, you can start editing articles.  Main.md is always the landing page.
