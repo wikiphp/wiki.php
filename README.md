@@ -16,6 +16,15 @@ Installation is really only a couple of steps:
 * Edit config.php.  The values are pretty self-explantory, but there's also comments explaining
 * Edit includes/header.md, includes/footer.md, and includes/sidebar.md
 
+If you are not using apache, you'll need to add in some mechanism for the rewrites to work, unless you don't care about pretty URLs.  But, you will need to keep those in mind when adding links to your documents.
+
+Something along these lines ~should~ work:
+
+        location / {
+                # This is cool because no php is touched for static content.
+                # include the "?$args" part so non-default permalinks doesn't break when using query string
+                try_files $uri $uri/ /index.php?$args;
+        }
 
 Once that's all set, you can start editing articles.  Main.md is always the landing page.
 
