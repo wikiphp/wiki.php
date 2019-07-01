@@ -44,5 +44,5 @@ Directory Structure
 Support
 =======
 
-Open an issue at [ubergeek/wiki.php](https://www.tildegit.org/ubergeek/wiki.php/issues).  PRs are also welcomed!
+Open an issue at [ubergeek/wiki.php](https://tildegit.org/ubergeek/wiki.php/issues).  PRs are also welcomed!
 
