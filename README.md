@@ -23,7 +23,7 @@ Something along these lines ~should~ work:
         location / {
                 # This is cool because no php is touched for static content.
                 # include the "?$args" part so non-default permalinks doesn't break when using query string
-                try_files $uri $uri/ /index.php?$args;
+                try_files $uri $uri/ /wiki.php?page=$uri;
         }
 
 Once that's all set, you can start editing articles.  Main.md is always the landing page.
