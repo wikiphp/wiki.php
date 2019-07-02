@@ -3,16 +3,26 @@
 include('config.php');
 
 $page = $_GET['page'];
+$style = $_GET['style'];
 
 if ( $page == "") {
 	$page = "main";
 	}
 
+if ( $style == "") {
+	if ( $site_style == "") {
+		$site_style="site";
+	}
+}
+else {
+	$site_style=$style;
+}
+ 
 print "<!DOCTYPE html>
 <html lang='en'>
 	<head>
 		<title>$site_name - $page</title>
-		<link rel='stylesheet' type='text/css' href='$site_root/includes/site.css'>
+		<link rel='stylesheet' type='text/css' href='$site_root/includes/$site_style.css'>
 	</head>
 	<body>
 <!-- Begin Header -->
