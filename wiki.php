@@ -1,6 +1,7 @@
 <?php
 
 include('config.php');
+include('parrsedown-1.7.3/Parsedown.php');
 
 $page = $_GET['page'];
 $style = $_GET['style'];
