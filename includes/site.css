@@ -3,11 +3,11 @@ This file is licensed under the GPL 3.0 or later.
 */
 
 body {
-	font-family: Sans-serif;
+	font-family: "Courier New", Courier, monospace;
 }
 
 #body {
-	width: 90%;
+	width: 95%;
 }
 
 #header {
@@ -19,6 +19,11 @@ body {
 	width: 78%;
 	float: left;
 	font-size: medium;
+}
+
+#content img {
+  max-height: 400px;
+  max-width: 98%;
 }
 
 #sidebar {
