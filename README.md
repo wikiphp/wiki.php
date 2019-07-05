@@ -40,6 +40,7 @@ Directory Structure
       footer.md <-- site footer
       sidebar.mb <-- site sidebar
     ./config.php <-- Site configuration file
+    ./parsedown-{version} <-- The parsedown version used in this engine
 
 Support
 =======
