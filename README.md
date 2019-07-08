@@ -20,11 +20,17 @@ If you are not using apache, you'll need to add in some mechanism for the rewrit
 
 Something along these lines ~should~ work:
 
-        location / {
-                # This is cool because no php is touched for static content.
-                # include the "?$args" part so non-default permalinks doesn't break when using query string
-                try_files $uri $uri/ /wiki.php?page=$uri;
-        }
+    location ~ (/includes/|/media) {
+    }
+
+    location / {
+      rewrite ^/$ /main;
+      rewrite ^/([A-Za-z0-9\/]+)/?$ /wiki.php?page=$1;
+    }
+
+    location /index {
+      rewrite ^/index\.php$ /wiki.php?page=main;
+    }
 
 Once that's all set, you can start editing articles.  Main.md is always the landing page.
 
