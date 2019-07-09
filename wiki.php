@@ -1,11 +1,13 @@
 <?php
 /*
-This code is Copyright(c) 2019 by ubergeek under the GPL 3 or later.
+This code is Copyright(c) 2019 by ubergeek under the AGPL 3 or later.
 Parsedown is licensed under the MIT license.
+ParsedownExtra is licensed under the MIT license.
 */
 
 include('config.php');
-include('parsedown-1.7.3/Parsedown.php');
+include('parsedown/Parsedown.php');
+include('parsedownextra/ParsedownExtra.phgp');
 
 $page = $_GET['page'];
 $style = $_GET['style'];
